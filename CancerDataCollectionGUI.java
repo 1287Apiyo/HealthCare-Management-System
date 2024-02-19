@@ -80,11 +80,11 @@ import java.util.List;
                 add(scrollPane, BorderLayout.CENTER);
 
                 JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-                buttonPanel.setBackground(Color.BLACK); // Set background color to black
+                buttonPanel.setBackground(Color.DARK_GRAY); // Set background color to black
 
                 JButton viewButton = new JButton("View All Patients");
                 viewButton.setBackground(Color.CYAN); // Set background color to CYAN
-                viewButton.setForeground(Color.BLACK); // Set foreground color to black
+                viewButton.setForeground(Color.DARK_GRAY); // Set foreground color to black
                 viewButton.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -102,7 +102,7 @@ import java.util.List;
                 for (int i = 0; i < patientList.size(); i++) {
                     Patient patient = patientList.get(i);
                     JPanel patientPanel = new JPanel(new BorderLayout());
-                    patientPanel.setBackground(Color.BLACK); // Set background color to black
+                    patientPanel.setBackground(Color.PINK); // Set background color to black
                     patientPanel.setBorder(BorderFactory.createLineBorder(Color.WHITE)); // Add border
                     JLabel patientLabel = new JLabel("<html><b>Patient " + (i + 1) + ":</b> " + patient.name + ", " + patient.age + ", " + patient.cancerType + "</html>");
                     patientLabel.setForeground(Color.WHITE); // Set foreground color to white
