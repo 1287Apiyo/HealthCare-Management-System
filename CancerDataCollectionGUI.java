@@ -27,11 +27,11 @@ import java.util.List;
                 setSize(400, 400);
                 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 setLayout(new BorderLayout());
-                getContentPane().setBackground(Color.LIGHT_GRAY); // Set background color to black
+                getContentPane().setBackground(Color.DARK_GRAY); // Set background color to black
                 setResizable(false);
 
                 JPanel inputPanel = new JPanel(new GridLayout(4, 2, 10, 10));
-                inputPanel.setBackground(Color.LIGHT_GRAY); // Set background color to black
+                inputPanel.setBackground(Color.DARK_GRAY); // Set background color to black
                 inputPanel.setForeground(Color.WHITE); // Set foreground color to white
 
                 JLabel nameLabel = new JLabel("Name:");
@@ -54,7 +54,7 @@ import java.util.List;
 
                 JButton addButton = new JButton("Add Patient Data");
                 addButton.setBackground(Color.CYAN); // Set background color to CYAN
-                addButton.setForeground(Color.BLACK); // Set foreground color to black
+                addButton.setForeground(Color.DARK_GRAY); // Set foreground color to black
                 addButton.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
